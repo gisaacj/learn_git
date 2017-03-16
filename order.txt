@@ -1,0 +1,43 @@
+git help			----show order help
+git show $id			----show $id message
+git co --<file>			----give up change in work space
+git co 				----give up (all?) change in work space
+git add <file>			----add changed file in temporary storage
+git add 			----add all changed file in temporary storage
+git rm <file> 			----del file in version storage
+git rm <file> --cached		----del file in version storage but not local
+git reset <file>		----recover file from temporary to work
+git reset --			----the same as the previous
+git reset --hard		----givp up this time's change
+git ci --amend			----change last time's commit record
+git revert <$id>		----recover $id commit status
+git revert HEAD			----recover last time's commit status
+git diff <file>			----compare now with temporary file
+git diff <id1><id2>		----compare
+git diff <branch1>..<branch2>	----compare branch
+git diff --staged		----compare staged
+git diff --cached		----compare cached
+git diff --stat			----only to compare stat
+git log <file>			----show file every time's record
+git log -p <file>		----detail diff
+git log -p -2			----last two times
+git log --stat			----show stat message
+git br -r			----show remote branch
+git br <new_branch>		----create new branch
+git br -v			----show each branch's last commit record
+git br --merged			----show each branch which has been merged now branch
+git br --no--merged		----opposite
+git co <branch>			----switch
+git co -b <new_branch>		----create new branch and switch
+git co -b <new_branch><branch>	----vreate new branch under branch
+git co $id			----check $id record
+git co $id -b <new_branch>	----check $id record and create branch
+git br -d <branch>		----del branch
+git br -D <branch>		----del forcible
+git pull			----remote to local
+git push			----local to remote
+git push origin master		----local master to remote master
+git push -u origin master	----init remote storage
+git push origin <local_branch>	----create remote branch and origin is remote storage name
+git remote -v			----show remote ip and name
+			
